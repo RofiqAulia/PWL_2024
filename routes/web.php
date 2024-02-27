@@ -40,8 +40,9 @@ Route::get('/articles/{id}', function ($id) {
     return 'Halaman Artikel dengan ID'.$id;
 });
 
-Route::get('/user/{name?}', function ($name=null) {
+Route::get('/user/{name?}', function ($name='john') {
     return 'Nama saya '.$name;
 });
+
 
     
