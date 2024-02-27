@@ -47,7 +47,9 @@ Route::get('/user/{name?}', function ($name=null) {
 Route::get('/user/profile', function () {
     //
     })->name('profile');
-    
+
+Route::view('/welcome', 'welcome'); 
+Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
 
 
     
