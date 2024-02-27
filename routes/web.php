@@ -27,6 +27,5 @@ Route::get('/world', function () {
     });
 
     Route::get('/about', function () {
-        return '2241720038';
-        return 'M. Rofiq Aulia';
+        return '2241720038_M. Rofiq Aulia';
         });
