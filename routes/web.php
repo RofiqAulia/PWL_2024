@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,5 +52,5 @@ Route::get('/user/profile', function () {
 Route::view('/welcome', 'welcome'); 
 Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
 
-
+Route::get('/hello', [WelcomeController::class,'hello']);
     
