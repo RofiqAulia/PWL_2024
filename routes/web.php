@@ -19,13 +19,17 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function () {
-return 'Hello World';
+    return 'Hello World';
 });
 
 Route::get('/world', function () {
     return 'World';
-    });
+});
 
-    Route::get('/about', function () {
-        return '2241720038_M. Rofiq Aulia';
-        });
+Route::get('/about', function () {
+    return '2241720038_M. Rofiq Aulia';
+});
+
+Route::get('/user/{rofiq}', function ($name) {
+    return 'Nama saya '.$name;
+});
