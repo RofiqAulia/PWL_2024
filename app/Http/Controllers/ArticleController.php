@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 class  ArticleController extends Controller {
 
-    public function article($id){
+    public function articles($id){
         return 'Halaman majalah ini pada nomer : '. $id;
     }
 }
